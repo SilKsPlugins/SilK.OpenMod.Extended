@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SilK.OpenMod.Extended", "SilK.OpenMod.Extended\SilK.OpenMod.Extended.csproj", "{CCFAA87F-4068-415F-8A2D-9E90DF5A307F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SilK.OpenMod.UnityEngine.Extended", "SilK.OpenMod.UnityEngine.Extended\SilK.OpenMod.UnityEngine.Extended.csproj", "{BC4E03BD-B9CD-402C-83EE-AA20D44109CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SilK.OpenMod.Unturned.Extended", "SilK.OpenMod.Unturned.Extended\SilK.OpenMod.Unturned.Extended.csproj", "{773CF875-0570-4B01-86F5-EFF6F0F84E6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8313D59B-CBEE-4ABC-8696-83ED9DE8E4D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilK.OpenMod.Extended.Tests", "tests\SilK.OpenMod.Extended.Tests\SilK.OpenMod.Extended.Tests.csproj", "{9ECBDA88-D6FD-468F-9D01-CBC3377E01D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCFAA87F-4068-415F-8A2D-9E90DF5A307F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFAA87F-4068-415F-8A2D-9E90DF5A307F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFAA87F-4068-415F-8A2D-9E90DF5A307F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFAA87F-4068-415F-8A2D-9E90DF5A307F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC4E03BD-B9CD-402C-83EE-AA20D44109CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC4E03BD-B9CD-402C-83EE-AA20D44109CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC4E03BD-B9CD-402C-83EE-AA20D44109CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC4E03BD-B9CD-402C-83EE-AA20D44109CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{773CF875-0570-4B01-86F5-EFF6F0F84E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{773CF875-0570-4B01-86F5-EFF6F0F84E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{773CF875-0570-4B01-86F5-EFF6F0F84E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{773CF875-0570-4B01-86F5-EFF6F0F84E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ECBDA88-D6FD-468F-9D01-CBC3377E01D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ECBDA88-D6FD-468F-9D01-CBC3377E01D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ECBDA88-D6FD-468F-9D01-CBC3377E01D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ECBDA88-D6FD-468F-9D01-CBC3377E01D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9ECBDA88-D6FD-468F-9D01-CBC3377E01D4} = {8313D59B-CBEE-4ABC-8696-83ED9DE8E4D8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C437E652-B871-411F-BE26-48142FDDCA8B}
+	EndGlobalSection
+EndGlobal
