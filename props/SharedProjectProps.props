@@ -10,10 +10,10 @@
     <RepositoryUrl>https://github.com/SilKsPlugins/SilK.OpenMod.Extended</RepositoryUrl>
   </PropertyGroup>
 
-    <PropertyGroup>
-        <Authors>Stephen White</Authors>
-        <Company>SilK's Plugins</Company>
-    </PropertyGroup>
+  <PropertyGroup>
+    <Authors>Stephen White</Authors>
+    <Company>SilK's Plugins</Company>
+  </PropertyGroup>
 
   <PropertyGroup>
     <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
