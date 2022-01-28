@@ -68,6 +68,6 @@ runs:
     # Push to NuGet on each tag, but only if the tag is not a pre-release version
     - name: Push to GitHub
       run: if ${{ inputs.github_push == 'true' }}; then
-             dotnet nuget push ${{ inputs.project_path }}/bin/Release/*.nupkg --api-key ${{ inputs.github_token }} --skip-duplicate --source https://nuget.pkg.github.com/openmod/index.json;
+             dotnet nuget push ${{ inputs.project_path }}/bin/Release/*.nupkg --api-key ${{ inputs.github_token }} --skip-duplicate --source https://nuget.pkg.github.com/silksplugins/index.json;
            fi
       shell: bash
