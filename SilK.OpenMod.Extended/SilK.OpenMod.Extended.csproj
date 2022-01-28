@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>
-    <Nullable>enable</Nullable>
-    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
+
+  <Import Project="$(MSBuildThisFileDirectory)..\props\SharedProjectProps.props" />
 
   <ItemGroup>
     <PackageReference Include="OpenMod.Core" Version="3.2.8" />

@@ -11,7 +11,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SilK.OpenMod.Unturned.Exten
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8313D59B-CBEE-4ABC-8696-83ED9DE8E4D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilK.OpenMod.Extended.Tests", "tests\SilK.OpenMod.Extended.Tests\SilK.OpenMod.Extended.Tests.csproj", "{9ECBDA88-D6FD-468F-9D01-CBC3377E01D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SilK.OpenMod.Extended.Tests", "tests\SilK.OpenMod.Extended.Tests\SilK.OpenMod.Extended.Tests.csproj", "{9ECBDA88-D6FD-468F-9D01-CBC3377E01D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{991F7D9E-A1D1-42E2-B66A-CBBDED709C03}"
+	ProjectSection(SolutionItems) = preProject
+		props\SharedProjectProps.props = props\SharedProjectProps.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
