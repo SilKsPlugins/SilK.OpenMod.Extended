@@ -1,0 +1,54 @@
+name: Deployment
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Plugin Version (SemVer: https://semver.org)'
+        required: true
+        
+jobs:
+  deploy:
+    name: "NuGet Deployment"
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+      name: Checkout Repository
+      with:
+        fetch-depth: 0
+        
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+        
+    - name: Build and Deploy SilK.OpenMod.Extended
+      uses: ./.github/actions/project-build
+      id: project-build
+      with:
+        project_path: SilK.OpenMod.Extended
+        nuget_push: true
+        github_push: true
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        nuget_key: ${{ secrets.NUGET_DEPLOY_KEY }}
+        
+    - name: Build and Deploy SilK.OpenMod.UnityEngine.Extended
+      uses: ./.github/actions/project-build
+      id: project-build
+      with:
+        project_path: SilK.OpenMod.UnityEngine.Extended
+        nuget_push: true
+        github_push: true
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        nuget_key: ${{ secrets.NUGET_DEPLOY_KEY }}
+        
+    - name: Build and Deploy SilK.OpenMod.Unturned.Extended
+      uses: ./.github/actions/project-build
+      id: project-build
+      with:
+        nuget_push: true
+        github_push: true
+        project_path: SilK.OpenMod.Unturned.Extended
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        nuget_key: ${{ secrets.NUGET_DEPLOY_KEY }}
